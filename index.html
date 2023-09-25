@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Longboard activities</title>
+    <title>Sporty Video List</title>
     <style>
-        /* Optional styles to make the videos look better in the list */
-        /* Ensure the video resizes for different screens */
-        video {
-            width: 100%;
-            max-width: 600px; /* can adjust based on preference */
-            margin-bottom: 20px;
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Mobile-first styles: assumes default styling is for small screens */
-        /* Then, enhance or adjust for larger screens with media queries */
+        header {
+            background: linear-gradient(45deg, #009966, #ff3300);
+            text-align: center;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
 
-        /* Example media query for screens larger than 600px */
-        @media screen and (min-width: 600px) {
-            /* Adjust styles as needed for larger screens */
-            /* For instance, you might want increased padding, margins or font-sizes */
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1rem auto;
+            border: 5px solid #ff3300;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 1rem;
+            background: #ff3300;
+            padding: 0.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
     </style>
 </head>
-<body>
-    <h1>Longboard activities</h1>
 
-    <div>
-        <h2>Pumping</h2>
+<body>
+    <header>
+        <h1>Longboard activities</h1>
+    </header>
+
+    <div class="container">
+        <h2>Pumping activity</h2>
         <video controls>
             <source src="pumping.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </div>
 
-    <div>
-        <h2>Pushing</h2>
+        <h2>Pushing activity</h2>
         <video controls>
             <source src="pushing.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </div>
 
-    <div>
-        <h2>Coasting</h2>
+        <h2>Coasting activity</h2>
         <video controls>
             <source src="coasting.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+        <!-- You can continue to add more video elements in this format -->
     </div>
 
 </body>
+
 </html>
