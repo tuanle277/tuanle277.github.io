@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Longboard activity</title>
+    <title>Longboard activity video websites</title>
     <style>
         body {
             font-family: 'Helvetica', sans-serif;
@@ -53,7 +53,7 @@
 
 <body>
     <header>
-        <h1>Longboard activities</h1>
+        <h1>Longboard activities demo videos</h1>
     </header>
 
     <div class="container">
@@ -75,7 +75,133 @@
             Your browser does not support the video tag.
         </video>
 
+        <h2>Application demo</h2>
+        <video controls>
+            <source src="demo_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
         <!-- You can continue to add more video elements in this format -->
+    <!-- </div> -->
+
+<!-- </body> -->
+
+<!-- </html> -->
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporty Video & Graph Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(45deg, #009966, #ff3300);
+            text-align: center;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1rem auto;
+            border: 5px solid #ff3300;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-top: 1rem;
+            background: #ff3300;
+            padding: 0.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .description {
+            margin: 1rem 0;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .graph {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1rem auto;
+            border: 5px solid #009966;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Longboard activities demo videos</h1>
+    </header>
+
+    <div class="container">
+        <h2>Pumping activity</h2>
+        <video controls>
+            <source src="pumping.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            "Pumping" involves the rider oscillating in a left-and-right motion while moving forward. This motion is extremely agile and short to keep the primary direction the forward direction. This allows the board to sustain sufficient acceleration forward and move without the usual pushing. 
+        </div>
+
+        <h2>Pushing activity</h2>
+        <video controls>
+            <source src="pushing.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            "Pushing" involves the rider pushing against the ground in the direction opposite of the moving direction. This allows the user to create acceleration to propel the longboard forward.
+        </div>
+
+        <h2>Coasting activity</h2>
+        <video controls>
+            <source src="coasting.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            "Coasting" involves the rider using recurring inertia to move forward with increasing velocity if the rider is moving downhill.   
+        </div>
+
+        <h2>Application demo</h2>
+        <video controls>
+            <source src="demo_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            A rider using the mobile application can press a button to begin recording their ride. Using an inclinometer and accelerometer sensors on an Android mobile device, roughly 200 times per second, 3-dimensional inclination and acceleration data are recorded. As soon as a full 3 seconds worth of data has been recorded, data points are normalized in the same way the training data was and then sent to the trained model. The model classifies these 3 seconds as pushing, pumping, or coasting, and the results of the classification are stored. When a rider has finished their ride, they can press a button to end the recording of data. At the conclusion of the recording, the current window is classified and all of the classifications are gathered together and summarized visually for the user. 
+        </div>
+
+        <!-- You can continue to add more video, graph, and description elements in this format -->
     </div>
 
 </body>
